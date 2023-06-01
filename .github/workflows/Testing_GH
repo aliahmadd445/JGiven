@@ -1,4 +1,4 @@
-name: "TESTING GH PAGES"
+name: "Testing"
 on: 
  workflow_dispatch:
 
