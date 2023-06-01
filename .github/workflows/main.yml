@@ -16,3 +16,7 @@ jobs:
       - name: buildinng
         run: |
           ls -ltr
+          cd JGiven/example-projects/spring-boot/
+          ./gradlew build
+          ls -ltr build/reports/jgiven/test/html/index.html
+          cat build/reports/jgiven/test/html/index.html
