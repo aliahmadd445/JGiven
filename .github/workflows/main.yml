@@ -30,7 +30,7 @@ jobs:
         with:
           # Upload entire repository
           #path: 'example-projects/spring-boot/build/reports/jgiven/test/html/'
-          path: 'test/'
+          path: './test/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
