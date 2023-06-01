@@ -1,5 +1,7 @@
 name: "Test published JGiven"
-on: [push, pull_request]
+on: 
+ push:
+ workflow_dispatch:
 
 jobs:
   validate_example_projects_work:
