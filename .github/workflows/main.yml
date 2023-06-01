@@ -20,3 +20,13 @@ jobs:
           ./gradlew build
           ls -ltr build/reports/jgiven/test/html/index.html
           cat build/reports/jgiven/test/html/index.html
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: 'build/reports/jgiven/test/html/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
